@@ -1,0 +1,14 @@
+import 'package:equatable/equatable.dart';
+
+class Ingredient extends Equatable {
+  Ingredient({
+    required this.name,
+    required this.measure,
+  });
+
+  final String name;
+  final String measure;
+
+  @override
+  List<Object?> get props =>[name, measure];
+}
